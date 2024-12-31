@@ -30,9 +30,9 @@ class UploadCubit extends Cubit<UploadCubitState> {
     }
   }
 
-  Future<void> uploadImage() async {
+  Future<void> uploadImage(String title, String price) async {
     if (image == null) {
-      emit(UploadError("No image to upload"));
+      emit(UploadError("all data should be entered"));
       return;
     }
 
@@ -45,7 +45,8 @@ class UploadCubit extends Cubit<UploadCubitState> {
       var uri = Uri.parse('https://fakestoreapi.com/products');
 
       var request = http.MultipartRequest('POST', uri);
-      request.fields['title'] = 'Static title';
+      request.fields['title'] = title;
+      request.fields['price'] = price;
 
       var multipart = http.MultipartFile('image', stream, length);
       request.files.add(multipart);
