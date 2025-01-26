@@ -1,16 +1,64 @@
-# cubit_imageupload_multipart
+```markdown
+# Flutter Cubit Image Upload with Multipart
 
-A new Flutter project.
+This Flutter project demonstrates how to upload an image to a REST API using `Cubit` and `multipart` requests. The app provides a simple UI to select an image from the device and upload it.
 
-## Getting Started
+## Features
+- State management using `Cubit`.
+- Image selection using `image_picker` package.
+- Upload functionality using `http` package with multipart request.
 
-This project is a starting point for a Flutter application.
+## How It Works
+1. User selects an image from the gallery or captures it using the camera.
+2. The image is uploaded to a REST API using a multipart request.
+3. `Cubit` manages the state of the upload process.
 
-A few resources to get you started if this is your first Flutter project:
+## Requirements
+- Flutter 3.x or above.
+- Packages:
+  - `flutter_bloc`
+  - `image_picker`
+  - `http`
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Usage
+1. Clone this repository.
+2. Add your API endpoint in the `Cubit` class for the image upload functionality.
+3. Run the app using:
+   ```bash
+   flutter pub get
+   flutter run
+   ``````markdown
+# Flutter Cubit Image Upload with Multipart
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This Flutter project demonstrates how to upload an image to a REST API using `Cubit` and `multipart` requests. The app provides a simple UI to select an image from the device and upload it.
+
+## Features
+- State management using `Cubit`.
+- Image selection using `image_picker` package.
+- Upload functionality using `http` package with multipart request.
+
+## How It Works
+1. User selects an image from the gallery or captures it using the camera.
+2. The image is uploaded to a REST API using a multipart request.
+3. `Cubit` manages the state of the upload process.
+
+## Requirements
+- Flutter 3.x or above.
+- Packages:
+  - `flutter_bloc`
+  - `image_picker`
+  - `http`
+
+## Usage
+1. Clone this repository.
+2. Add your API endpoint in the `Cubit` class for the image upload functionality.
+3. Run the app using:
+   ```bash
+   flutter pub get
+   flutter run
+   ```
+
+## Screen record
+https://github.com/user-attachments/assets/de17a4dc-b708-45a2-9856-07d6a6c456d6
+
+
